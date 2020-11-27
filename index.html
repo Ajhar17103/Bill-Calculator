@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bill Calculator App </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--StyleCss-->
+    <link rel='stylesheet' type='text/css' href='./Style/style.css'>
+    <!--FontAwsome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+
+   <body id='body'>
+      <div id="container" class="bg-light">
+        <div class="text-center  px-3 d-inline">
+          <h1>Bill Calculator</h1>
+          <hr/>
+        </div>
+        <div id="form" class="mx-5 ">
+          <form class="form py-3">
+            <div class="form-group mx-5 px-5">
+              <label><b>Bill($)</b></label>
+              <input type="text" id="bill" class="w-100" >
+            </div>
+            <div class="form-group mx-5 px-5">
+              <label><b>Tips($)</b></label>
+              <input type="range" id="tips" class="w-100" >
+               <b><label id="tipsValue"></label></b>
+            </div>
+            <div class="form-group mx-5 px-5">
+              <label><b>Total Person($)</b></label>
+              <input type="text" id="person" class="w-100" >
+            </div>
+            <div class="form-group text-center mx-5 px-5 py-3">
+             <button class="btn btn-success w-50" id="calculate">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <hr/>
+        <div id="form" class="mx-5 bg-info">
+          <div class="text-center">
+            <h1>Your Bill Comes to</h1></div>
+          <form class="form py-3">
+            <div class="form-group mx-5 px-5">
+              <label><b>Total Bill($)</b></label>
+              <input type="button" id="showBill" class="w-100 text-left" >
+            </div>
+            <div class="form-group mx-5 px-5">
+              <label><b>Totla Tips($)</b></label>
+              <input type="button"  id="showTips" class="w-100 text-left" >
+                
+            </div>
+            <div class="form-group mx-5 px-5">
+              <label><b>Per Person($)</b></label>
+              <input type="button" id="showPerson" class="w-100 text-left" >
+            </div>
+           
+          </form>
+        </div>
+        </div>
+      </div>
+
+    <script src='./mainjs/Script.js'></script>
+  </body>
+
+</html>
